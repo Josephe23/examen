@@ -1,0 +1,14 @@
+{% extends 'profesor/base.html' %}
+
+{% block content %}
+<div>
+  <h1>Listar Materia</h1>
+</div>
+  {% for post in materia %}
+    <div>
+      <p>Nombre: {{ post.nombre|linebreaksbr }}</a>
+      <p>Profesor: {{ post.profe|linebreaksbr }}</p>
+      <p>Grado: {{ post.grado }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}
